@@ -1,0 +1,173 @@
+/***** BASE STYLES *****/
+body {
+  background-color: #1f202b;
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px;
+  padding-left: 50px;
+}
+
+/***** GRID *****/
+
+.full-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+.half-width {
+  width: 600px;
+  float: left;
+}
+.third-width {
+  width: 400px;
+  float: left;
+}
+
+/***** HEADER *****/
+
+header {
+  height: 40px;
+  color: white;
+  width:1200px;
+}
+
+header h1 {
+  font-size: 30px;
+  padding: 30px 0 0 0;
+  text-align: left;
+}
+
+nav {
+  float: right;
+  padding-top: 50px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 80px;
+}
+
+/***** TOP *****/
+
+#top h3 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 62px;
+  width: 800px;
+}
+
+/***** MY PORTFOLIO *****/
+#portfolio {
+  width: 1200px;
+}
+
+#portfolio div {
+  color: white;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#portfolio h2 {
+  text-align: center;
+  color: #fa0075;
+  font-family: 'Source Code Pro', monospace;
+  padding: 20px 0 30px 0;
+}
+
+#jubilee-logo, #rogue-pickings, #NYAQ-logo {
+  width: 550px;
+  height: 400px;
+  float: left;
+  text-align: right;
+}
+
+#NYAQ-logo {
+  padding-bottom: 50px;
+}
+
+#jubilee-description, #rogue-logo, #NYAQ-description {
+  width: 550px;
+  height: 400px;
+  float:right;
+}
+
+/***** ABOUT *****/
+
+#about {
+  background: url('../img/keyboard-background.png') no-repeat center;
+  height: 800px;
+  width: 1200px;
+  clear: both;
+}
+#about h2 {
+  color: #fa0075;
+  font-family: 'Source Code Pro';
+  font-size: 36px;
+  text-align: center;
+  padding-top: 150px;
+}
+#about p {
+  color: black;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+/***** Contact *****/
+#contact {
+  height: 700px;
+  float: left;
+}
+#contact h2 {
+  text-align: center;
+  color: #fa0075;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+
+#contact p {
+  padding-top: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 5px;
+}
+#contact ul {
+  list-style: none;
+}
+#contact ul li {
+  display: inline-block;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+#contact ul img {
+  padding-right: 48px;
+  float: right;
+}
+#typewriter img {
+  width: 80%;
+  border: 12px solid #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***** FOOTER *****/
+
+footer {
+  clear: both;
+  height: 80px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  width:1200px;
+}
