@@ -88,26 +88,11 @@ body {
       font-family: 'Montserrat', sans-serif;
       font-size: 1em;
       color: white;
-      text-align: left;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-h1 {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 2em;
+      text-align: center;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.9em;
 }
 
 h3 {
@@ -121,14 +106,13 @@ h4 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.285;
 }
 
 img {
   width: 100%;
 }
-
 figure {
   margin: 0;
 }
@@ -141,7 +125,6 @@ address {
   width: 90%;
   margin: 50px 0;
 }
-
 /* -------- Base Header - Footer Styles -------*/
 
 header, footer {
@@ -180,37 +163,18 @@ header figure {
   flex-flow: row wrap;
 }
 
-header h2 {
+header h2, h3 {
   margin: 0;
-  font-size: 1.9em;
 }
 
-.header-divider {
+.divider {
   background: white;
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
 }
 
-header nav {
-  width: 85%;
-  font-size: 1.125em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header nav ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
 footer {
-  text-align: center;
   flex-direction: column;
 }
 
@@ -228,13 +192,6 @@ footer .footer-content {
 
 footer h3 {
   margin: 0;
-}
-
-footer .footer-divider {
-  background: white;
-  height: 1px;
-  width: 100%;
-  margin: 10px 0 20px 0;
 }
 
 footer p {
@@ -272,17 +229,7 @@ footer i {
 
 footer .copyright {
     margin: 20px 0;
-}
-/***** HERO *****/
-
-.hero-area {
-  background: url('../img/hero-background.png') center no-repeat #333;
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+    width: 100%;
 }
 
 /***** PORTFOLIO *****/
@@ -290,61 +237,17 @@ footer .copyright {
 .portfolio {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
-.portfolio h3 {
-  margin: 0 0 20px 0;
-  text-align: center;
-}
-
-.portfolio .portfolio-items {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: column;
-}
-
-.portfolio article {
-  width: 65%;
-  text-align: center;
-  margin: 25px 0;
-}
-
-.portfolio h4 {
-  margin: 10px 0;
-}
-
-.portfolio figure {
-  margin-bottom: 20px;
-}
-
-/***** ABOUT *****/
-
-.about {
-  background: url('../img/keyboard-background.png') center no-repeat #eee;
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.about .content-wrapper {
-  margin-top: 20px;
-  margin-bottom: 110px;
-}
-.about h3 {
+.portfolio .content-wrapper {
+  width: 75%;
   margin: 0;
-  text-align: center;
 }
 
-.about p {
-  color: black;
-  text-align: left;
-  font-size: 1.2em;
-  width: 90%;
+.portfolio h2, h4 {
+  margin: 30px 0;
 }
 
 ========================================================================== */
@@ -383,50 +286,53 @@ header h2 {
   font-size: 1.6em;
 }
 
-header nav {
-  width: 40%;
-}
-
 header .header-divider {
-  width:0;
+  width: 0;
 }
 
-/* Hero Area */
+/* Portfolio */
 
-.hero-area {
-  min-height: 600px;
-}
-.hero-area h1 {
-  font-size: 3em;
-}
-
-/*Portfolio */
-
-.portfolio h3 {
-  margin: 0;
-}
-
-.portfolio h4 {
-  font-size: 1.3em;
+.portfolio h2 {
+  margin: 50px;
+  font-size: 2.4em;
 }
 
 .portfolio .portfolio-items {
-  justify-content: space-between;
-  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
+
 .portfolio article {
-  width: 45%;
+  width: 80%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.portfolio h4 {
+  margin: 20px 0;
+}
+
+.portfolio figure {
+  width: 50%;
 }
 
 /* Footer */
 
 footer .content-wrapper {
   width: 100%;
+  margin: 20px 0 100px 0;
 }
 
 footer h3 {
   text-align: center;
   width: 100%;
+  margin-bottom: 40px;
+  font-size: 2em;
 }
 
 footer .footer-content {
@@ -443,6 +349,10 @@ footer figure {
   width: 25%;
 }
 
+footer .divider {
+  width: 0%;
+}
+
 footer p {
   margin: 0 0 10px 0;
 }
@@ -456,14 +366,22 @@ footer p {
   max-width: 1150px;
 }
 
-h3 {
-font-size: 3em;
+h2, h3 {
+font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 /* Header */
 
 header figure {
-  width: 18%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,41 +392,27 @@ header h2 {
   font-size: 2em;
 }
 
-header nav {
-  width: 30%;
-}
-
-/* Hero Area */
-
-.hero-area {
-  min-height: 700px;
-}
-.hero-area h1 {
-  font-size: 4em;
-}
-
 /* Portfolio */
 
-.portfolio h3 {
-  margin: 50px 0;
-}
-
+.portfolio h2,
 .portfolio h4 {
-  font-size: 1.8em;
+  margin: 40px 0;
 }
 
-/* About */
-
-.about {
-  min-height: 600px;
-}
-.about p {
-  width: 70%;
-  font-size: 1.5em;
+.portfolio figure {
+  width: 55%;
 }
 
 /* Footer */
 
+footer .footer-content {
+  margin: 100px 0;
+}
+
+footer h3 {
+  font-size: 2.5em;
+}
 footer p {
   font-size: 1.5em;
+}
 }

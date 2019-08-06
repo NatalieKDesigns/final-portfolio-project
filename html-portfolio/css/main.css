@@ -137,11 +137,18 @@ header, footer {
 /***** HEADER *****/
 
 header {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 header .content-wrapper {
-  margin: 0 0 50px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,6 +194,13 @@ footer h3 {
   margin: 0;
 }
 
+footer .footer-divider {
+  background: white;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
 footer p {
   margin: 10px;
   font-size: 1.125em;
@@ -222,6 +236,7 @@ footer i {
 
 footer .copyright {
     margin: 20px 0;
+    width: 100%;
 }
 
 /***** PORTFOLIO *****/
@@ -240,4 +255,158 @@ footer .copyright {
 
 .portfolio h2, h4 {
   margin: 0;
+}
+
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+
+/* General styles */
+
+.content-wrapper {
+  max-width: 650px;
+}
+
+/* Header */
+header {
+  padding: 30px 0 10px 0;
+}
+
+header .content-wrapper {
+  justify-content: space-between;
+}
+
+header article {
+width: 48%;
+justify-content: flex-start;
+}
+
+header figure {
+  width: 15%;
+}
+
+header h2 {
+  font-size: 1.6em;
+}
+
+header .header-divider {
+  width: 0;
+}
+
+/* Portfolio */
+
+.portfolio .portfolio-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.portfolio article {
+  width: 70%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* Footer */
+
+footer .content-wrapper {
+  width: 100%;
+  margin: 20px 0 100px 0;
+}
+
+footer h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+footer .footer-content {
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .contact, footer .social {
+  width: 33%;
+}
+
+footer figure {
+  width: 25%;
+}
+
+footer .footer-divider {
+  width: 0%;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+/* General styles */
+
+.content-wrapper {
+  max-width: 1150px;
+}
+
+h2, h3 {
+font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* Header */
+
+header figure {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+
+/* Portfolio */
+
+.portfolio h2 {
+  margin: 40px 0;
+}
+
+.portfolio figure {
+  width: 55%;
+}
+
+/* Footer */
+
+footer .footer-content {
+  margin: 100px 0;
+}
+
+footer h3 {
+  font-size: 2.5em;
+}
+footer p {
+  font-size: 1.5em;
+}
 }
